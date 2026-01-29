@@ -105,7 +105,6 @@ def test_ganador(movimientos_ganador):
 	assert jugada_ganadora(movimientos_ganador)
 
 import os
-import winsound
 
 if __name__ == "__main__":
 	#Pedimos el tamaño del tablero en que se va a realizar el juego
