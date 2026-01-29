@@ -14,19 +14,6 @@ def mostrar_tablero(n, movimientos_jugadores):
 				print('_ ',end='')
 		print('\n')
 
-if __name__ == "__main__":
-	#Pedimos el tamaño del tablero en que se va a realizar el juego
-	n=int(input('Introduce el tamaño del tablero cuadrado:'))
-
-	casillas_libres = n*n
-	jugador_activo = 0
-
-	movimientos_jugador_1 = {}
-	movimientos_jugador_2 = {}
-	movimientos_jugadores = [movimientos_jugador_1, movimientos_jugador_2]
-
-	mostrar_tablero(n,movimientos_jugadores)
-
 import pytest
 from juego_3_en_raya import mostrar_tablero
 
@@ -158,7 +145,6 @@ if __name__ == "__main__":
 			frequency = 2000 # Set Frequency To 2500 Hertz
 			duration = 1000 # Set Duration To 1000 ms == 1 second
 			print('\a')
-			winsound.Beep(frequency, duration)
 			print("Movimiento invalido. Turno para el siguiente jugador")
 
 		casillas_libres= casillas_libres -1
